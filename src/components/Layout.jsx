@@ -1,6 +1,5 @@
-// app/components/Layout.jsx
 import { Outlet } from '@remix-run/react';
-import BackToTop from './BackToTop'; // Adjust path based on your file structure
+import BackToTop from './BackToTop'; 
 
 const Layout = () => {
   return (
@@ -10,10 +9,9 @@ const Layout = () => {
       </header>
 
       <main>
-        <Outlet /> {/* Renders page-specific content */}
+        <Outlet /> 
       </main>
 
-      {/* Add Back to Top button globally */}
       <BackToTop />
 
       <footer>

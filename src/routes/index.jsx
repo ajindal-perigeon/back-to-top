@@ -1,5 +1,4 @@
-// app/routes/index.jsx
-import Layout from '../components/Layout'; // Adjust path if needed
+import Layout from '../components/Layout'; 
 
 const Index = () => {
   return (
