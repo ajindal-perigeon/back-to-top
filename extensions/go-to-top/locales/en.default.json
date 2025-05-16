@@ -1,15 +1,10 @@
 {
   "back_to_top_button": {
     "settings": {
-      "label": "Enable Back to Top Button",
-      "description": "Enable or disable the back to top button on your store's frontend.",
-      "button_text": "Back to Top",
-      "position": "Position from bottom",
-      "button_color": "Button Color"
-    },
-    "messages": {
-      "button_enabled": "Back to Top Button is enabled.",
-      "button_disabled": "Back to Top Button is disabled."
+      "enable_back_to_top_button": "Enable Back to Top Button",
+      "button_text": "Button Text",
+      "button_background_color": "Button Background Color",
+      "button_text_color": "Button Text Color"
     }
   }
 }

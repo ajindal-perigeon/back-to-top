@@ -1,23 +1,11 @@
-{% if settings.enable_back_to_top_button %}
-  <div id="backToTopButton" style="display:none; position:fixed; bottom:20px; right:20px; z-index:999;">
-    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" 
-            style="background-color:#007bff; color:white; border:none; padding:10px 20px; font-size:16px; border-radius:5px;">
-      Back to Top
-    </button>
-  </div>
-
-  <script>
-    // Show the button when scrolling down
-    window.onscroll = function() {
-      var backToTopButton = document.getElementById("backToTopButton");
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        backToTopButton.style.display = "block";
-      } else {
-        backToTopButton.style.display = "none";
-      }
-    };
-  </script>
-{% endif %}
+<div id="backToTopButton" style="display:none; position:fixed; bottom:20px; right:20px; z-index:999;">
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" 
+          style="background-color: {{ settings.button_background_color }};
+                 color: {{ settings.button_text_color | default: '#ffffff' }};
+                 border:none; padding:10px 20px; font-size:16px; border-radius:5px;">
+    {{ settings.button_text | default: "Back to Top" }}
+  </button>
+</div>
 
 {% schema %}
 {
@@ -26,26 +14,26 @@
   "settings": [
     {
       "type": "checkbox",
-      "label": "Enable Back to Top Button",
       "id": "enable_back_to_top_button",
+      "label": "Enable Back to Top Button",
       "default": true
     },
     {
       "type": "text",
-      "label": "Button Text",
       "id": "button_text",
+      "label": "Button Text",
       "default": "Back to Top"
     },
     {
       "type": "color",
-      "label": "Button Background Color",
       "id": "button_background_color",
+      "label": "Button Background Color",
       "default": "#007bff"
     },
     {
       "type": "color",
-      "label": "Button Text Color",
       "id": "button_text_color",
+      "label": "Button Text Color",
       "default": "#ffffff"
     }
   ]
