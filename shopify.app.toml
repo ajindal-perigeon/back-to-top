@@ -3,7 +3,7 @@
 client_id = "69ac83d1e0a2e7f43359940d973ecd1c"
 name = "back-to-top"
 handle = "back-to-top-10"
-application_url = "https://included-truly-artificial-trips.trycloudflare.com"
+application_url = "https://contribution-ctrl-jason-deposits.trycloudflare.com"
 embedded = true
 
 [build]
@@ -27,9 +27,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://included-truly-artificial-trips.trycloudflare.com/auth/callback",
-  "https://included-truly-artificial-trips.trycloudflare.com/auth/shopify/callback",
-  "https://included-truly-artificial-trips.trycloudflare.com/api/auth/callback"
+  "https://contribution-ctrl-jason-deposits.trycloudflare.com/auth/callback",
+  "https://contribution-ctrl-jason-deposits.trycloudflare.com/auth/shopify/callback",
+  "https://contribution-ctrl-jason-deposits.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
