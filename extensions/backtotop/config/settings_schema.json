@@ -1,12 +1,7 @@
 [
   {
-    "type": "header",
-    "content": "Back to Top Button Settings"
-  },
-  {
-    "type": "checkbox",
-    "label": "Enable Back to Top Button",
-    "id": "enabled",
-    "default": true
+    "name": "Back to Top Button",
+    "target": "body",
+    "settings": []
   }
 ]
