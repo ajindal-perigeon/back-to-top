@@ -1,56 +1,26 @@
 [
   {
-    "name": "Back to Top Button",
-    "settings": [
-      {
-        "type": "checkbox",
-        "label": "Enable Back to Top Button",
-        "id": "enable_back_to_top_button",
-        "default": true
-      },
-      {
-        "type": "text",
-        "label": "Button Text",
-        "id": "button_text",
-        "default": "Back to Top",
-        "info": "Text that will appear on the back-to-top button."
-      },
-      {
-        "type": "range",
-        "label": "Button Position from Bottom",
-        "id": "button_position",
-        "min": 10,
-        "max": 100,
-        "step": 10,
-        "unit": "px",
-        "default": 20,
-        "info": "Set the distance from the bottom of the screen."
-      },
-      {
-        "type": "select",
-        "label": "Button Color",
-        "id": "button_color",
-        "options": [
-          {
-            "label": "Red",
-            "value": "#FF0000"
-          },
-          {
-            "label": "Blue",
-            "value": "#0000FF"
-          },
-          {
-            "label": "Green",
-            "value": "#00FF00"
-          },
-          {
-            "label": "Black",
-            "value": "#000000"
-          }
-        ],
-        "default": "#0000FF",
-        "info": "Select the color of the button."
-      }
-    ]
+    "type": "checkbox",
+    "id": "enable_back_to_top_button",
+    "label": "Enable Back to Top Button",
+    "default": true
+  },
+  {
+    "type": "text",
+    "id": "button_text",
+    "label": "Button Text",
+    "default": "Back to Top"
+  },
+  {
+    "type": "color",
+    "id": "button_background_color",
+    "label": "Button Background Color",
+    "default": "#007bff"
+  },
+  {
+    "type": "color",
+    "id": "button_text_color",
+    "label": "Button Text Color",
+    "default": "#ffffff"
   }
 ]
